@@ -89,11 +89,6 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObject
 gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects3= [];
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition2IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -102,27 +97,28 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.eventsList0 = 
 gdjs.copyArray(gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].timerElapsedTime("FlashTimer", (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHalfPeriodTime())) ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].isVisible() ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].hide();
@@ -140,27 +136,28 @@ if (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1
 gdjs.copyArray(gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].timerElapsedTime("FlashTimer", (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHalfPeriodTime())) ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].isVisible()) ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects2[i].hide(false);
@@ -177,16 +174,17 @@ if (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition1
 
 /* Reuse gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[i].timerElapsedTime("FlashDurationTimer", (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFlashDuration())) ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Stop((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -202,16 +200,17 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObject
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1);
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsFlashing() ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Flash__Flash.Flash.prototype.doStepPreEventsContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -293,25 +292,17 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext = {};
 gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.GDObjectObjects1= [];
 gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.conditionTrue_1 = gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.condition0IsTrue_0;
-gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.conditionTrue_1.val = ((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("FlashDuration")) || 0 : 0) > 0);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = ((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("FlashDuration")) || 0 : 0) > 0);
 }
-}if (gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Flash__Flash.Flash.prototype.FlashContext.GDObjectObjects1[i].resetTimer("FlashDurationTimer");
@@ -400,16 +391,13 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext = {};
 gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -420,16 +408,17 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.eventsList0 = funct
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1);
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsFlashing() ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.IsFlashingContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -507,15 +496,13 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext = {};
 gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext.GDObjectObjects1= [];
 gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Flash__Flash.Flash.prototype.onOwnerRemovedFromSceneContext.GDObjectObjects1.length ;i < len;++i) {
@@ -603,15 +590,13 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext = {};
 gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Flash__Flash.Flash.prototype.onDeActivateContext.GDObjectObjects1.length ;i < len;++i) {
@@ -694,10 +679,6 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext = {};
 gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1= [];
 gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -705,16 +686,17 @@ gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.eventsList0 = function(ru
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1);
 
-gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsFlashing() ) {
-        gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1[k] = gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Flash__Flash.Flash.prototype.StopContext.GDObjectObjects1[i].hide(false);

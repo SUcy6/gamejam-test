@@ -1,34 +1,44 @@
-gdjs.Entry1Code = {};
-gdjs.Entry1Code.GDNewText3Objects1= [];
-gdjs.Entry1Code.GDNewText3Objects2= [];
-gdjs.Entry1Code.GDentryTitleObjects1= [];
-gdjs.Entry1Code.GDentryTitleObjects2= [];
-gdjs.Entry1Code.GDNewVideoObjects1= [];
-gdjs.Entry1Code.GDNewVideoObjects2= [];
-gdjs.Entry1Code.GDStartObjects1= [];
-gdjs.Entry1Code.GDStartObjects2= [];
-
-gdjs.Entry1Code.conditionTrue_0 = {val:false};
-gdjs.Entry1Code.condition0IsTrue_0 = {val:false};
-gdjs.Entry1Code.condition1IsTrue_0 = {val:false};
-gdjs.Entry1Code.condition2IsTrue_0 = {val:false};
+gdjs.introCode = {};
+gdjs.introCode.GDDialogueObjects1= [];
+gdjs.introCode.GDDialogueObjects2= [];
+gdjs.introCode.GDTagObjects1= [];
+gdjs.introCode.GDTagObjects2= [];
+gdjs.introCode.GDManObjects1= [];
+gdjs.introCode.GDManObjects2= [];
+gdjs.introCode.GDNewVideoObjects1= [];
+gdjs.introCode.GDNewVideoObjects2= [];
 
 
-gdjs.Entry1Code.mapOfGDgdjs_46Entry1Code_46GDStartObjects1Objects = Hashtable.newFrom({"Start": gdjs.Entry1Code.GDStartObjects1});
-gdjs.Entry1Code.mapOfGDgdjs_46Entry1Code_46GDStartObjects1Objects = Hashtable.newFrom({"Start": gdjs.Entry1Code.GDStartObjects1});
-gdjs.Entry1Code.mapOfGDgdjs_46Entry1Code_46GDStartObjects1Objects = Hashtable.newFrom({"Start": gdjs.Entry1Code.GDStartObjects1});
-gdjs.Entry1Code.eventsList0 = function(runtimeScene) {
+gdjs.introCode.asyncCallback13110844 = function (runtimeScene, asyncObjectsList) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Entry1", false);
+}}
+gdjs.introCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
-gdjs.Entry1Code.condition0IsTrue_0.val = false;
 {
-gdjs.Entry1Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if (gdjs.Entry1Code.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("entryTitle"), gdjs.Entry1Code.GDentryTitleObjects1);
-{for(var i = 0, len = gdjs.Entry1Code.GDentryTitleObjects1.length ;i < len;++i) {
-    gdjs.Entry1Code.GDentryTitleObjects1[i].hide(false);
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.introCode.asyncCallback13110844(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.introCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NewVideo"), gdjs.introCode.GDNewVideoObjects1);
+{for(var i = 0, len = gdjs.introCode.GDNewVideoObjects1.length ;i < len;++i) {
+    gdjs.introCode.GDNewVideoObjects1[i].play();
 }
 }}
 
@@ -37,75 +47,45 @@ gdjs.copyArray(runtimeScene.getObjects("entryTitle"), gdjs.Entry1Code.GDentryTit
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Start"), gdjs.Entry1Code.GDStartObjects1);
+gdjs.copyArray(runtimeScene.getObjects("NewVideo"), gdjs.introCode.GDNewVideoObjects1);
 
-gdjs.Entry1Code.condition0IsTrue_0.val = false;
-{
-gdjs.Entry1Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Entry1Code.mapOfGDgdjs_46Entry1Code_46GDStartObjects1Objects, runtimeScene, true, false);
-}if (gdjs.Entry1Code.condition0IsTrue_0.val) {
-/* Reuse gdjs.Entry1Code.GDStartObjects1 */
-{for(var i = 0, len = gdjs.Entry1Code.GDStartObjects1.length ;i < len;++i) {
-    gdjs.Entry1Code.GDStartObjects1[i].setOpacity(150);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.introCode.GDNewVideoObjects1.length;i<l;++i) {
+    if ( gdjs.introCode.GDNewVideoObjects1[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.introCode.GDNewVideoObjects1[k] = gdjs.introCode.GDNewVideoObjects1[i];
+        ++k;
+    }
 }
-}}
+gdjs.introCode.GDNewVideoObjects1.length = k;
+if (isConditionTrue_0) {
 
+{ //Subevents
+gdjs.introCode.eventsList0(runtimeScene);} //End of subevents
 }
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Start"), gdjs.Entry1Code.GDStartObjects1);
-
-gdjs.Entry1Code.condition0IsTrue_0.val = false;
-{
-gdjs.Entry1Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Entry1Code.mapOfGDgdjs_46Entry1Code_46GDStartObjects1Objects, runtimeScene, true, true);
-}if (gdjs.Entry1Code.condition0IsTrue_0.val) {
-/* Reuse gdjs.Entry1Code.GDStartObjects1 */
-{for(var i = 0, len = gdjs.Entry1Code.GDStartObjects1.length ;i < len;++i) {
-    gdjs.Entry1Code.GDStartObjects1[i].setOpacity(255);
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Start"), gdjs.Entry1Code.GDStartObjects1);
-
-gdjs.Entry1Code.condition0IsTrue_0.val = false;
-gdjs.Entry1Code.condition1IsTrue_0.val = false;
-{
-gdjs.Entry1Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Entry1Code.mapOfGDgdjs_46Entry1Code_46GDStartObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.Entry1Code.condition0IsTrue_0.val ) {
-{
-gdjs.Entry1Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
-if (gdjs.Entry1Code.condition1IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Entry2", false);
-}}
 
 }
 
 
 };
 
-gdjs.Entry1Code.func = function(runtimeScene) {
+gdjs.introCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.Entry1Code.GDNewText3Objects1.length = 0;
-gdjs.Entry1Code.GDNewText3Objects2.length = 0;
-gdjs.Entry1Code.GDentryTitleObjects1.length = 0;
-gdjs.Entry1Code.GDentryTitleObjects2.length = 0;
-gdjs.Entry1Code.GDNewVideoObjects1.length = 0;
-gdjs.Entry1Code.GDNewVideoObjects2.length = 0;
-gdjs.Entry1Code.GDStartObjects1.length = 0;
-gdjs.Entry1Code.GDStartObjects2.length = 0;
+gdjs.introCode.GDDialogueObjects1.length = 0;
+gdjs.introCode.GDDialogueObjects2.length = 0;
+gdjs.introCode.GDTagObjects1.length = 0;
+gdjs.introCode.GDTagObjects2.length = 0;
+gdjs.introCode.GDManObjects1.length = 0;
+gdjs.introCode.GDManObjects2.length = 0;
+gdjs.introCode.GDNewVideoObjects1.length = 0;
+gdjs.introCode.GDNewVideoObjects2.length = 0;
 
-gdjs.Entry1Code.eventsList0(runtimeScene);
+gdjs.introCode.eventsList1(runtimeScene);
 
 return;
 
 }
 
-gdjs['Entry1Code'] = gdjs.Entry1Code;
+gdjs['introCode'] = gdjs.introCode;

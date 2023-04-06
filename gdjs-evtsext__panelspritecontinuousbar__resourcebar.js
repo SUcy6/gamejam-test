@@ -94,10 +94,6 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStep
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -112,16 +108,17 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStep
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1[i].getTimerElapsedTimeInSecondsOrNaN("__ResourceBar.LastValueChange") <= (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPreviousHighValueDuration())) ) {
-        gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdatePreviousHighValue((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -203,15 +200,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueC
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.ValueContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getValue()); }}}
@@ -291,16 +286,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetVal
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length ;i < len;++i) {
@@ -315,16 +307,17 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSp
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getValue() < (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).PreviousHighValue((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i].resetTimer("__ResourceBar.LastValueChange");
@@ -338,16 +331,17 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetVal
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getValue() >= (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPreviousHighValue()) ) {
-        gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetValueContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).UpdatePreviousHighValue((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -430,15 +424,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxVal
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.MaxValueContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxValue()); }}}
@@ -518,15 +510,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMax
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMaxValueContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMaxValueContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMaxValueContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMaxValueContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMaxValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMaxValueContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetMaxValueContext.GDObjectObjects1.length ;i < len;++i) {
@@ -610,10 +600,6 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmpt
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -621,16 +607,17 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmpt
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getValue() == 0 ) {
-        gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsEmptyContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -708,10 +695,6 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFull
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -719,16 +702,17 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFull
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getValue() == (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxValue()) ) {
-        gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsFullContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -806,15 +790,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.Previo
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPreviousHighValue()); }}}
@@ -894,15 +876,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.Update
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.UpdatePreviousHighValueContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.UpdatePreviousHighValueContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.UpdatePreviousHighValueContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.UpdatePreviousHighValueContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.UpdatePreviousHighValueContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.UpdatePreviousHighValueContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.UpdatePreviousHighValueContext.GDObjectObjects1.length ;i < len;++i) {
@@ -985,15 +965,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.Previo
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.PreviousHighValueDurationContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPreviousHighValueDuration()); }}}
@@ -1073,15 +1051,13 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPre
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPreviousHighValueDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPreviousHighValueDurationContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPreviousHighValueDurationContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPreviousHighValueDurationContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPreviousHighValueDurationContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPreviousHighValueDurationContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.SetPreviousHighValueDurationContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1165,11 +1141,6 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChan
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition2IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1177,27 +1148,28 @@ gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChan
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).PreviousHighValue((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) != (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getValue()) ) {
-        gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length = k;}if ( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[i].getTimerElapsedTimeInSecondsOrNaN("__ResourceBar.LastValueChange") <= (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPreviousHighValueDuration()) ) {
-        gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length = k;}}
-if (gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteContinuousBar__ResourceBar.ResourceBar.prototype.IsChangingContext.GDObjectObjects1.length = k;
+}
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }

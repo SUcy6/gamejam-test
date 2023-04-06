@@ -1,8 +1,8 @@
 {
-  "name": "波尔斯工厂",
-  "short_name": "波尔斯工厂",
+  "name": "Birth Factory - Chapter 1",
+  "short_name": "Birth Factory - Chapter 1",
   "id": "com.example.gamename",
-  "description": "",
+  "description": "Birth Factory - Chapter 1",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
